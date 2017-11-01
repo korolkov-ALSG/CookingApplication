@@ -22,7 +22,7 @@ namespace CookingApplication
 
             Spinner spinner1 = FindViewById<Spinner>(Resource.Id.spinner1);
             spinner1.Prompt = "Выберите страну";
-            spinner1.ItemSelected  += spinner_ItemSelected;
+            spinner1.ItemSelected += spinner_ItemSelected;
             var adapter1 = ArrayAdapter.CreateFromResource(
                 this, Resource.Array.countryes_array, Android.Resource.Layout.SimpleSpinnerItem);
             adapter1.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
@@ -36,13 +36,18 @@ namespace CookingApplication
             adapter2.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             spinner2.Adapter = adapter2;
 
-            AutoCompleteTextView textView = FindViewById<AutoCompleteTextView>(Resource.Id.autocomplete_country);
-            var adapter = new ArrayAdapter<String>(this, Resource.Layout.List_item, INGREDIENTS);
-
-            textView.Adapter = adapter;
+            MultiAutoCompleteTextView MAtextView = FindViewById<MultiAutoCompleteTextView>(Resource.Id.multiAutocomplete_country);
+            ArrayAdapter adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleExpandableListItem1, INGREDIENTS);
+            MAtextView.Adapter = adapter;
+            MAtextView.Threshold = 1;
+            MAtextView.SetTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+           
 
         }
-
+        static string[] INGREDIENTS = new string[]
+        {
+            "Помидоры", "Огурцы","Майонез"
+        };
         private void Spinner2_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;

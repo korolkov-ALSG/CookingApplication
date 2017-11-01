@@ -49,8 +49,10 @@
         android:layout_marginTop="20.0dp"
         android:layout_marginLeft="50.0dp"
         android:text="Ингредиенты" />
-   <AutoCompleteTextView android:id="@+id/autocomplete_country"
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutocomplete_country"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"/>
+        android:hint="Multi Autocomplete TextView"
+        android:layout_marginLeft="5dp" />
 </LinearLayout>
