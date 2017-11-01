@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+
+
 namespace CookingApplication
 {
     [Activity(Label = "Поиск по странам")]
@@ -22,7 +24,6 @@ namespace CookingApplication
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Country);
-
             count1_button = FindViewById<FrameLayout>(Resource.Id.country1);
             count2_button = FindViewById<FrameLayout>(Resource.Id.country2);
             count3_button = FindViewById<FrameLayout>(Resource.Id.country3);

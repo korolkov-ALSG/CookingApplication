@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
 
 namespace CookingApplication
 {
@@ -23,6 +24,7 @@ namespace CookingApplication
             country_button.Click += Country_button_Click;
             advanced_search_button.Click += Advanced_search_button_Click;
             favorites_button.Click += Favorites_button_Click;
+            
         }
 
         private void Favorites_button_Click(object sender, System.EventArgs e)
@@ -33,7 +35,7 @@ namespace CookingApplication
 
         private void Advanced_search_button_Click(object sender, System.EventArgs e)
         {
-            StartActivity(typeof(Title1));
+            StartActivity(typeof(Search));
             OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
         }
 
@@ -41,6 +43,7 @@ namespace CookingApplication
         {
             StartActivity(typeof(Country));
             OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
+
         }
 
         private void Category_button_Click(object sender, System.EventArgs e)
