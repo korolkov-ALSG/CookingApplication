@@ -5,7 +5,7 @@ using Android.Content;
 
 namespace CookingApplication
 {
-    [Activity(Label = "Кулинарные рецепты", MainLauncher = true)]
+    [Activity(Label = "Кулинарные рецепты", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         FrameLayout category_button, country_button, advanced_search_button, favorites_button;
@@ -48,7 +48,7 @@ namespace CookingApplication
 
         private void Category_button_Click(object sender, System.EventArgs e)
         {
-            StartActivity(typeof(Category));
+            StartActivity(typeof(CategoryActivity));
             OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
         }
     }

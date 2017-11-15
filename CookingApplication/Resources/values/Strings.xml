@@ -2,16 +2,8 @@
 <resources>
   <string name="app_name">Кулинарные рецепты</string>
   <string-array name="countryes_array">
-    <item>Country1</item>
-    <item>Country2</item>
-    <item>Country3</item>
-    <item>Country4</item>
-    <item>Country5</item>
-    <item>Country6</item>
-    <item>Country7</item>
-    <item>Country8</item>
-    <item>Country9</item>
-    <item>Country10</item>
+    <item>Финляндия</item>
+    <item>Корея</item>
   </string-array>
   <string-array name="category_array">
     <item>Суп</item>

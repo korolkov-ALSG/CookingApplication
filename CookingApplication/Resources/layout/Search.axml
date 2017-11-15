@@ -10,42 +10,37 @@
         android:textSize="10pt"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:layout_marginTop="20.0dp"
+        android:layout_marginTop="55.0dp"
         android:layout_marginLeft="50.0dp" />
     <Spinner
         android:spinnerMode="dialog"
         android:layout_width="fill_parent"
         android:layout_height="37.5dp"
-        android:id="@+id/spinner1"
+        android:id="@+id/spinner_Country"
         android:layout_marginLeft="50.0dp"
         android:layout_marginRight="50.0dp"
         android:backgroundTint="#ffb4b4b4"
-        android:backgroundTintMode="screen"
-        android:clickable="true" />
+        android:backgroundTintMode="screen" />
     <TextView
         android:text="Категория"
         android:textSize="10pt"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
         android:layout_marginTop="20.0dp"
         android:layout_marginLeft="50.0dp" />
     <Spinner
         android:spinnerMode="dialog"
         android:layout_width="fill_parent"
         android:layout_height="37.5dp"
-        android:id="@+id/spinner2"
+        android:id="@+id/spinner_Category"
         android:layout_marginLeft="50.0dp"
         android:layout_marginRight="50.0dp"
         android:backgroundTint="#ffb4b4b4"
-        android:backgroundTintMode="screen"
-        android:clickable="true" />
+        android:backgroundTintMode="screen" />
     <TextView
         android:textSize="10pt"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
         android:layout_marginTop="20.0dp"
         android:layout_marginLeft="50.0dp"
         android:text="Ингредиенты" />
@@ -53,6 +48,20 @@
         android:id="@+id/multiAutocomplete_country"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Multi Autocomplete TextView"
-        android:layout_marginLeft="5dp" />
+        android:hint="Введите названия продуктов"
+        android:layout_marginLeft="50.0dp"
+        android:layout_marginRight="50.0dp" />
+    <TextView
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSEARCH" />
+    <Button
+        android:text="ПОИСК"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50.0dp"
+        android:layout_marginRight="50.0dp"
+        android:id="@+id/buttonSearth"
+        android:layout_marginTop="139.0dp" />
 </LinearLayout>
