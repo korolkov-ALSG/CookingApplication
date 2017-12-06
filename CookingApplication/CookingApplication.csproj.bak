@@ -17,7 +17,7 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -74,7 +74,6 @@
   <ItemGroup>
     <Compile Include="CategoryActivity.cs" />
     <Compile Include="Category.cs" />
-    <Compile Include="Composition.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Cuisine.cs" />
     <Compile Include="Ingredient.cs" />
@@ -86,7 +85,6 @@
     <Compile Include="Search.cs" />
     <Compile Include="SQLite_Android.cs" />
     <Compile Include="Title1.cs" />
-    <Compile Include="Unit_measure.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Cooking.db" />

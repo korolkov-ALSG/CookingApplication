@@ -51,11 +51,6 @@
         android:hint="Введите названия продуктов"
         android:layout_marginLeft="50.0dp"
         android:layout_marginRight="50.0dp" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textSEARCH" />
     <Button
         android:text="ПОИСК"
         android:layout_width="fill_parent"
@@ -63,5 +58,5 @@
         android:layout_marginLeft="50.0dp"
         android:layout_marginRight="50.0dp"
         android:id="@+id/buttonSearth"
-        android:layout_marginTop="139.0dp" />
+        android:layout_marginTop="81.0dp" />
 </LinearLayout>

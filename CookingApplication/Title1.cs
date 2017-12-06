@@ -13,13 +13,13 @@ using Android.Widget;
 namespace CookingApplication
 {
     [Activity(Label = "Title1")]
+
     public class Title1 : Activity
     {
         private Button btnBack;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.Title1);
 
             btnBack = FindViewById<Button>(Resource.Id.btnBack);
@@ -30,5 +30,6 @@ namespace CookingApplication
         {
             StartActivity(typeof(MainActivity));
         }
+
     }
 }

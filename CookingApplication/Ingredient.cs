@@ -12,23 +12,24 @@ using Android.Widget;
 
 namespace CookingApplication
 {
-    public class Cuisine
+    public class Ingredient
     {
-        public string Cuisine_name { get; set; }
-        public int Cuisine_ID { get; set; }
+        public string Ingredient_name { get; set; }
+        public int Ingredient_ID { get; set; }
 
-        public Cuisine(string name, int ID)
+        public Ingredient(string name, int ID)
         {
-            Cuisine_name = name;
-            Cuisine_ID = ID;
+            Ingredient_name = name;
+            Ingredient_ID = ID;
         }
-        public Cuisine()
+        public Ingredient()
         {
 
         }
         public override string ToString()
         {
-            return Cuisine_name;
+            return Ingredient_name;
         }
+
     }
 }

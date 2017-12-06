@@ -104,8 +104,8 @@ namespace CookingApplication
 			// aapt resource value: 0x7f070020
 			public const int advanced_search = 2131165216;
 			
-			// aapt resource value: 0x7f070027
-			public const int btnBack = 2131165223;
+			// aapt resource value: 0x7f070028
+			public const int btnBack = 2131165224;
 			
 			// aapt resource value: 0x7f070026
 			public const int buttonSearth = 2131165222;
@@ -176,8 +176,8 @@ namespace CookingApplication
 			// aapt resource value: 0x7f070003
 			public const int main_course = 2131165187;
 			
-			// aapt resource value: 0x7f070024
-			public const int multiAutocomplete_country = 2131165220;
+			// aapt resource value: 0x7f070025
+			public const int multiAutocomplete_country = 2131165221;
 			
 			// aapt resource value: 0x7f070001
 			public const int salad = 2131165185;
@@ -185,14 +185,11 @@ namespace CookingApplication
 			// aapt resource value: 0x7f070002
 			public const int snak = 2131165186;
 			
+			// aapt resource value: 0x7f070024
+			public const int spinner_Category = 2131165220;
+			
 			// aapt resource value: 0x7f070023
-			public const int spinner_Category = 2131165219;
-			
-			// aapt resource value: 0x7f070022
-			public const int spinner_Country = 2131165218;
-			
-			// aapt resource value: 0x7f070025
-			public const int textSEARCH = 2131165221;
+			public const int spinner_Country = 2131165219;
 			
 			// aapt resource value: 0x7f070009
 			public const int textView1 = 2131165193;
@@ -218,6 +215,12 @@ namespace CookingApplication
 			// aapt resource value: 0x7f07001d
 			public const int textView8 = 2131165213;
 			
+			// aapt resource value: 0x7f070022
+			public const int textViewMAKET = 2131165218;
+			
+			// aapt resource value: 0x7f070027
+			public const int textViewTitle = 2131165223;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -241,10 +244,16 @@ namespace CookingApplication
 			public const int Main = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Search = 2130903043;
+			public const int Maket = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int Title1 = 2130903044;
+			public const int Preview = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int Search = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int Title1 = 2130903046;
 			
 			static Layout()
 			{

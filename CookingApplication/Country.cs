@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 
 
@@ -34,6 +35,42 @@ namespace CookingApplication
             count8_button = FindViewById<FrameLayout>(Resource.Id.country8);
             count9_button = FindViewById<FrameLayout>(Resource.Id.country9);
             count10_button = FindViewById<FrameLayout>(Resource.Id.country10);
+
+            count1_button.Click += Count1_button_Click;
+            count2_button.Click += Count2_button_Click;
         }
+
+        private void Count2_button_Click(object sender, EventArgs e)
+        {
+            SearchRecipe("Корея");
+        }
+
+        private void Count1_button_Click(object sender, EventArgs e)
+        {
+            SearchRecipe("Финляндия");
+        }
+
+        private void SearchRecipe(string nameCountry)
+        {
+            //настройка соединения с БД
+            SQLite_Android dbPATH = new SQLite_Android();
+            var db = new SQLiteConnection(dbPATH.GetDbPath("Cooking.db"));
+
+            Intent myIntent = new Intent(this, typeof(Maket));
+
+            //поиск по категории блюда  
+            var country = db.Query<Cuisine>("SELECT Cuisine_ID FROM cuisine WHERE Cuisine_name = '" + nameCountry + "';");
+            foreach (Cuisine j in country)
+            {
+                var Dish = db.Query<Recipe>("SELECT Recipe_name, Cooking_method FROM recipe WHERE Rec_Cuisine_ID = " + j.Cuisine_ID + ";");
+                foreach (Recipe k in Dish)
+                {
+                    myIntent.PutExtra("cooking", k.Recipe_name + "\n" + k.Cooking_method);
+                    OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
+                    StartActivity(myIntent);
+                }
+            }
+        }
+
     }
 }

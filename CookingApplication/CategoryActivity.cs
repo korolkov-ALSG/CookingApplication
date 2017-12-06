@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace CookingApplication
 {
@@ -45,8 +46,7 @@ namespace CookingApplication
 
         private void Dessert_button_Click(object sender, EventArgs e)
         {
-            StartActivity(typeof(Title1));
-            OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
+            SearchRecipe("Десерт");
         }
 
         private void Main_course_button_Click(object sender, EventArgs e)
@@ -57,8 +57,7 @@ namespace CookingApplication
 
         private void Snak_button_Click(object sender, EventArgs e)
         {
-            StartActivity(typeof(Title1));
-            OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
+            SearchRecipe("Закуска");
         }
 
         private void Salad_button_Click(object sender, EventArgs e)
@@ -69,8 +68,28 @@ namespace CookingApplication
 
         private void Soup_button_Click(object sender, EventArgs e)
         {
-            StartActivity(typeof(Title1));
-            OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
+            SearchRecipe("Суп");
+        }
+        private void SearchRecipe(string nameCategory)
+        {
+            //настройка соединения с БД
+            SQLite_Android dbPATH = new SQLite_Android();
+            var db = new SQLiteConnection(dbPATH.GetDbPath("Cooking.db"));
+
+            Intent myIntent = new Intent(this, typeof(Maket));
+
+            //поиск по категории блюда  
+            var ctg = db.Query<Category>("SELECT Category_ID FROM category WHERE Category_name = '" + nameCategory + "';");
+            foreach (Category j in ctg)
+            {
+                var Dish = db.Query<Recipe>("SELECT Recipe_name, Cooking_method FROM recipe WHERE Rec_Category_ID = " + j.Category_ID + ";");
+                foreach (Recipe k in Dish)
+                {
+                    myIntent.PutExtra("cooking", k.Recipe_name + "\n" + k.Cooking_method);
+                    OverridePendingTransition(Resource.Animation.slide_right, Resource.Animation.fade_out);
+                    StartActivity(myIntent);
+                }
+            }
         }
     }
 }
