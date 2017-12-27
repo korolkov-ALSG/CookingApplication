@@ -2,40 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/textura">
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingTop="70dp">
+        android:paddingTop="70dp"
+        android:layout_marginTop="82.0dp">
         <FrameLayout
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="#EDEDED"
             android:clickable="true"
             android:id="@+id/Soup">
             <TextView
-                android:text="Супы"
+                android:text=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#333639" />
+                android:textColor="#333639"
+                android:background="@drawable/button_sup" />
         </FrameLayout>
         <FrameLayout
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="#EDEDED"
             android:clickable="true"
             android:id="@+id/salad">
             <TextView
-                android:text="Салаты"
+                android:text=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#333639" />
+                android:textColor="#333639"
+                android:background="@drawable/button_salat" />
         </FrameLayout>
     </LinearLayout>
     <LinearLayout
@@ -48,29 +50,29 @@
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="#EDEDED"
             android:clickable="true"
             android:id="@+id/snak">
             <TextView
-                android:text="Закуски"
+                android:text=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#333639" />
+                android:textColor="#333639"
+                android:background="@drawable/button_zakuska" />
         </FrameLayout>
         <FrameLayout
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="#EDEDED"
             android:clickable="true"
             android:id="@+id/main_course">
             <TextView
-                android:text="Основное блюдо"
+                android:text=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#333639" />
+                android:textColor="#333639"
+                android:background="@drawable/button_osnovnoe" />
         </FrameLayout>
     </LinearLayout>
     <LinearLayout
@@ -83,29 +85,29 @@
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="#EDEDED"
             android:clickable="true"
             android:id="@+id/dessert">
             <TextView
-                android:text="Десерты"
+                android:text=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#333639" />
+                android:textColor="#333639"
+                android:background="@drawable/button_desert" />
         </FrameLayout>
         <FrameLayout
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="#EDEDED"
             android:clickable="true"
             android:id="@+id/drink">
             <TextView
-                android:text="Напитки"
+                android:text=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#333639" />
+                android:textColor="#333639"
+                android:background="@drawable/button_desert" />
         </FrameLayout>
     </LinearLayout>
 </LinearLayout>

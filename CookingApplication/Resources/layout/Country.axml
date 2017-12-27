@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/textura">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -12,36 +13,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:id="@+id/linearLayout1">
+            android:id="@+id/linearLayout1"
+            android:paddingTop="100dp">
             <FrameLayout
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
-                android:background="#EDEDED"
                 android:clickable="true"
                 android:id="@+id/country1">
                 <TextView
-                    android:text="Финляндия"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:textColor="#333639"
-                    android:id="@+id/textView1" />
+                    android:id="@+id/textView1"
+                    android:background="@drawable/fin" />
             </FrameLayout>
             <FrameLayout
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
-                android:background="#EDEDED"
                 android:clickable="true"
                 android:id="@+id/country2">
                 <TextView
-                    android:text="Корея"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:textColor="#333639"
-                    android:id="@+id/textView2" />
+                    android:id="@+id/textView2"
+                    android:background="@drawable/kor" />
             </FrameLayout>
         </LinearLayout>
         <LinearLayout
@@ -55,28 +57,27 @@
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
-                android:background="#EDEDED"
                 android:clickable="true"
                 android:id="@+id/country3">
                 <TextView
-                    android:text="country3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:textColor="#333639"
-                    android:id="@+id/textView3" />
+                    android:id="@+id/textView3"
+                    android:background="@drawable/nem" />
             </FrameLayout>
             <FrameLayout
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
-                android:background="#EDEDED"
                 android:clickable="true"
                 android:id="@+id/country4">
                 <TextView
-                    android:text="country4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:textColor="#333639"
                     android:id="@+id/textView4" />
@@ -93,107 +94,31 @@
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
-                android:background="#EDEDED"
                 android:clickable="true"
                 android:id="@+id/country5">
                 <TextView
-                    android:text="country5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:textColor="#333639"
-                    android:id="@+id/textView5" />
+                    android:id="@+id/textView5"
+                    android:background="@drawable/ukr" />
             </FrameLayout>
             <FrameLayout
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
-                android:background="#EDEDED"
                 android:clickable="true"
                 android:id="@+id/country6">
                 <TextView
-                    android:text="country6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:textColor="#333639"
-                    android:id="@+id/textView6" />
-            </FrameLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="25dp"
-            android:id="@+id/linearLayout4">
-            <FrameLayout
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="#EDEDED"
-                android:clickable="true"
-                android:id="@+id/country7">
-                <TextView
-                    android:text="country7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="#333639"
-                    android:id="@+id/textView3" />
-            </FrameLayout>
-            <FrameLayout
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="#EDEDED"
-                android:clickable="true"
-                android:id="@+id/country8">
-                <TextView
-                    android:text="country8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="#333639"
-                    android:id="@+id/textView4" />
-            </FrameLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingTop="25dp"
-            android:id="@+id/linearLayout5">
-            <FrameLayout
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="#EDEDED"
-                android:clickable="true"
-                android:id="@+id/country9">
-                <TextView
-                    android:text="country9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="#333639"
-                    android:id="@+id/textView7" />
-            </FrameLayout>
-            <FrameLayout
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="#EDEDED"
-                android:clickable="true"
-                android:id="@+id/country10">
-                <TextView
-                    android:text="country10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="#333639"
-                    android:id="@+id/textView8" />
+                    android:id="@+id/textView6"
+                    android:background="@drawable/mex" />
             </FrameLayout>
         </LinearLayout>
     </LinearLayout>

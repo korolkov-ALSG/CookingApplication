@@ -15,16 +15,18 @@ namespace CookingApplication
     public class Recipe
     {
         public string Recipe_name { get; set; }
+        public int Recip_ID { get; set; }
         public int Rec_Category_ID { get; set; }
         public string Cooking_method { get; set; }
         public int Rec_Cuisine_ID { get; set; }
 
-        public Recipe(string name, string cookingmethod, int ID, int Cuisine_ID)
+        public Recipe(string name, string cookingmethod, int ID, int Cuisine_ID, int RecID)
         {
             Recipe_name = name;
             Rec_Category_ID = ID;
             Cooking_method = cookingmethod;
             Rec_Cuisine_ID = Cuisine_ID;
+            Recip_ID = RecID;
 
         }
         public Recipe()
